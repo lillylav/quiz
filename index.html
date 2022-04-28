@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coding Quiz</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+ </head>
+  <body>
+    <!-- in JS timeEl -->
+      <div class="timer">Time: <span id="time"></span></div>
+      <div class="wrapper">
+          <!-- in JS startEl -->
+          <div id="start-screen" class="start">
+            <h1>This is a Coding Quiz</h1>
+            <p>
+            Answer these Trivia Questions
+            </p>
+            <!-- in JS startBtnEl -->
+            <button id="startBtn">Start Quiz</button>
+          </div>
+          <!-- in JS questionsEl -->
+          <div id="questions" class="hide">
+            <!-- in JS questionTitleEl -->
+            <h2 id="question-title"></h2>
+            <!-- in JS choicesEl -->
+            <div id="choices" class="choices"></div>
+          </div>
+          <!-- in JS endScreenEl -->
+          <div id="end-screen" class="hide">
+            <h2>You’re Done.</h2>
+            <!-- in JS finalScoreEl -->
+            <p>Your final score is <span id="final-score"></span>.</p>
+            <!-- in JS intialsEl-->
+            <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <!-- in JS submitBtnEl -->
+            <button id="submit">Submit</button>
+            <!-- in JS highScoresEl -->
+            <ul id="high-scores"></ul>
+            </p>
+          </div>
+        
+        </div>
+      <script src="./assets/js/script.js"></script>
+    </body>
+</html>
