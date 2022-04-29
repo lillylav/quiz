@@ -76,10 +76,7 @@ const timerInterval = () => {
     }
 };
 
-// create start quiz function that hides start screen, 
-//unhides questions, 
-//starts timer, 
-//then runs cycle questions function
+
 const quizStart = function() {
     startEl.setAttribute("class", "hide");
     questionsEl.removeAttribute("class");
@@ -87,10 +84,7 @@ const quizStart = function() {
     cycleQuestions();
 };
 
-// cycle questions function that takes current question index 
-//and displays question title, 
-//a forEach that creates a button on the answer choices array, 
-//add attributes that will allow us to check right/wrong
+
 const cycleQuestions = () => {
     const currentQuestion = codequestions[questionIndex];
     questionTitleEl.textContent = currentQuestion.title;
@@ -103,11 +97,7 @@ const cycleQuestions = () => {
         choiceBtn.onclick = correctAnswer;
         choicesEl.appendChild(choiceBtn);
     });
-};
-
-// check answer function that checks if answer is correct or incorrect, 
-//if incorrect, moves to next question index, 
-//and if no more questions fire quiz end function else fire cycle questions again  
+}; 
 
 const correctAnswer = function() {
     console.log(codequestions[questionIndex].answer);

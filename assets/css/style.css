@@ -1,3 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top:20px;
+}
+
 .hide {
     display: none;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.choices button {
+    width: 400px;
+}
+
+li {
+    list-style-type: none;
 }
